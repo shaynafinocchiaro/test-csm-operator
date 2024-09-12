@@ -13,7 +13,7 @@ name: Go Version
 
 on:
   repository_dispatch:
-    types: [trigger-go-workflow]
+    types: [go-update-workflow]
 
 jobs:
   # go version update
