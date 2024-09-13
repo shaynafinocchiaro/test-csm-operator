@@ -20,3 +20,4 @@ jobs:
   go-version:
     uses: shaynafinocchiaro/test-common-github-actions/.github/workflows/go-version.yaml@main
     name: Go Version Update
+    secrets: inherit
