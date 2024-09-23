@@ -13,6 +13,10 @@ on:
   repository_dispatch:
     types: [go-update-workflow]
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   # go version update
   go-version-update:
