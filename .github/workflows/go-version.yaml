@@ -14,10 +14,10 @@ on:
     types: [go-update-workflow]
 
 # permissions required for this workflow
-permissions:
-  contents: write
-  pull-requests: write
-  actions: write
+permissions: write-all
+  # contents: write
+  # pull-requests: write
+  # actions: write
 
 jobs:
   # go version update
