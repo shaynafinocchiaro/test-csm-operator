@@ -13,8 +13,6 @@ on:
   repository_dispatch:
     types: [go-update-workflow]
 
-permissions: write-all
-
 jobs:
   # go version update
   go-version-update:
