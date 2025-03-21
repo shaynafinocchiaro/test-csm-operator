@@ -1,7 +1,7 @@
 name: Release CSM-Operator
 # Invocable as a reusable workflow
 # Can be manually triggered
-on:  # yamllint disable-line rule:truthy
+on: # yamllint disable-line rule:truthy
   workflow_call:
   workflow_dispatch:
     inputs:
@@ -16,9 +16,9 @@ on:  # yamllint disable-line rule:truthy
           - patch
 jobs:
   csm-release:
-    uses: dell/common-github-actions/.github/workflows/csm-release-driver-module.yaml@main
+    uses: shaynafinocchiaro/test-common-github-actions/.github/workflows/csm-release-driver-module.yaml@main
     name: Release CSM Drivers and Modules
     with:
       version: ${{ github.event.inputs.option }}
-      images: 'dell-csm-operator'
+      images: 'dell-csm-operator-dummy'
     secrets: inherit
