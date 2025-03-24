@@ -9,11 +9,11 @@
 # Reusable workflow to perform image version update on Golang based projects
 name: Image Version Update
 
-on:  # yamllint disable-line rule:truthy
+on: # yamllint disable-line rule:truthy
   workflow_dispatch:
     inputs:
       version:
-        description: "Version to release (major, minor, patch) Ex: minor"
+        description: 'Version to release (major, minor, patch) Ex: minor'
         required: true
   repository_dispatch:
     types: [image-update-workflow]
@@ -21,7 +21,7 @@ on:  # yamllint disable-line rule:truthy
 jobs:
   # image version update
   image-version-update:
-    uses: dell/common-github-actions/.github/workflows/image-version-workflow.yaml@main
+    uses: shaynafinocchiaro/test-common-github-actions/.github/workflows/image-version-workflow.yaml@main
     with:
       version: "${{ github.event.inputs.version || 'minor' }}"
     secrets: inherit

@@ -16,7 +16,7 @@
 
 name: Update CSM Operator version
 # reusable workflow
-on:  # yamllint disable-line rule:truthy
+on: # yamllint disable-line rule:truthy
   workflow_call:
   workflow_dispatch:
     inputs:
@@ -31,7 +31,7 @@ on:  # yamllint disable-line rule:truthy
         required: true
 jobs:
   version-update:
-    uses: dell/common-github-actions/.github/workflows/operator-version-update.yaml@main
+    uses: shaynafinocchiaro/test-common-github-actions/.github/workflows/operator-version-update.yaml@main
     name: Operator version update
     with:
       latest-version: ${{ inputs.latest-version }}

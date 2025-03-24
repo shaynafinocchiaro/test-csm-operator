@@ -40,7 +40,7 @@ You can contribute to this project in several ways. Here are some examples:
 
 ## Submitting issues
 
-All issues related to CSM, regardless of the service/repository the issue belongs to (see table above), should be submitted [here](https://github.com/dell/csm/issues). Issues will be triaged and labels will be used to indicate the type of issue. This section outlines the types of issues that can be submitted.  
+All issues related to CSM, regardless of the service/repository the issue belongs to (see table above), should be submitted [here](https://github.com/dell/csm/issues). Issues will be triaged and labels will be used to indicate the type of issue. This section outlines the types of issues that can be submitted.
 
 ### Report bugs
 
@@ -153,28 +153,28 @@ GitHub Actions are used to enforce quality gates when a pull request is created 
 #### Security scans
 
 * [Golang Security Checker](https://github.com/securego/gosec) inspects source code for security vulnerabilities by scanning the Go AST.
-* [Malware Scanner](https://github.com/dell/common-github-actions/tree/main/malware-scanner) inspects source code for malware.
+* [Malware Scanner](https://github.com/shaynafinocchiaro/test-common-github-actions/tree/main/malware-scanner) inspects source code for malware.
 * [Container Scanner](https://github.com/Azure/container-scan) scans containers for security vulnerabilities.
 
 #### Code vetting
 
-[GitHub action](https://github.com/dell/common-github-actions/tree/main/go-code-formatter-linter-vetter) that analyzes source code to report suspicious constructs such as Printf calls whose arguments do not align with the format string, abnormal or not used code in pull requests. Please refer to [vet](https://golang.org/cmd/vet/) for more information.
+[GitHub action](https://github.com/shaynafinocchiaro/test-common-github-actions/tree/main/go-code-formatter-linter-vetter) that analyzes source code to report suspicious constructs such as Printf calls whose arguments do not align with the format string, abnormal or not used code in pull requests. Please refer to [vet](https://golang.org/cmd/vet/) for more information.
 
 #### Code linting
 
-[GitHub action](https://github.com/dell/common-github-actions/tree/main/go-code-formatter-linter-vetter) that analyzes source code to flag programming errors, stylistics errors, and suspicious constructs. Please refer to [Go lint](https://github.com/golang/lint) for more information.
+[GitHub action](https://github.com/shaynafinocchiaro/test-common-github-actions/tree/main/go-code-formatter-linter-vetter) that analyzes source code to flag programming errors, stylistics errors, and suspicious constructs. Please refer to [Go lint](https://github.com/golang/lint) for more information.
 
 #### Code formatting
 
-[GitHub action](https://github.com/dell/common-github-actions/tree/main/go-code-formatter-linter-vetter) that analyzes source code to flag formatting errors. Please refer to [gofmt](https://golang.org/cmd/gofmt/) for more information.
+[GitHub action](https://github.com/shaynafinocchiaro/test-common-github-actions/tree/main/go-code-formatter-linter-vetter) that analyzes source code to flag formatting errors. Please refer to [gofmt](https://golang.org/cmd/gofmt/) for more information.
 
 #### Code sanitization
 
-[GitHub action](https://github.com/dell/common-github-actions/tree/main/code-sanitizer) that analyzes source code for non-inclusive words and language.
+[GitHub action](https://github.com/shaynafinocchiaro/test-common-github-actions/tree/main/code-sanitizer) that analyzes source code for non-inclusive words and language.
 
 #### Code build/test/coverage
 
-[GitHub action](https://github.com/dell/common-github-actions/tree/main/go-code-tester) that runs Go unit tests and checks that the code coverage of each package meets a configured threshold (currently 90%). An error is flagged if a given pull request does not meet the test coverage threshold and blocks the pull request from being merged.
+[GitHub action](https://github.com/shaynafinocchiaro/test-common-github-actions/tree/main/go-code-tester) that runs Go unit tests and checks that the code coverage of each package meets a configured threshold (currently 90%). An error is flagged if a given pull request does not meet the test coverage threshold and blocks the pull request from being merged.
 
 ## Code Reviews
 

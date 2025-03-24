@@ -16,7 +16,7 @@
 
 name: Update sidecar version
 # reusable workflow
-on:  # yamllint disable-line rule:truthy
+on: # yamllint disable-line rule:truthy
   workflow_call:
   workflow_dispatch:
     inputs:
@@ -46,7 +46,7 @@ on:  # yamllint disable-line rule:truthy
         required: true
 jobs:
   version-update:
-    uses: dell/common-github-actions/.github/workflows/sidecar-version-update.yaml@main
+    uses: shaynafinocchiaro/test-common-github-actions/.github/workflows/sidecar-version-update.yaml@main
     name: Sidecar version update
     with:
       attacher: ${{ inputs.attacher }}
